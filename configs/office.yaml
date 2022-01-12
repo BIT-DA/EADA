@@ -1,0 +1,41 @@
+OUTPUT_DIR: 'results/'
+
+INPUT:
+  SIZE: (256, 256)
+  CROP_SIZE: (224, 224)
+  SOURCE_TRANSFORMS: ('random_crop', 'normalize', 'colorjitter')
+  TARGET_TRANSFORMS: ('random_crop', 'normalize')
+  TEST_TRANSFORMS: ('center_crop', 'normalize')
+  PIXEL_MEAN: [0.485, 0.456, 0.406]
+  PIXEL_STD: [0.229, 0.224, 0.225]
+
+DATASET:
+  ROOT: 'data/list/'
+  NAME: 'office'
+  SOURCE_DOMAINS: ['amazon', 'dslr', 'webcam']
+  TARGET_DOMAINS: ['amazon', 'dslr', 'webcam']
+  NUM_CLASS: 31
+
+DATALOADER:
+  SOURCE:
+    BATCH_SIZE: 32
+  TARGET:
+    BATCH_SIZE: 32
+  TEST:
+    BATCH_SIZE: 32
+TRAIN:
+  PRINT_FREQ: 10
+
+OPTIM:
+  NAME: 'Adadelta'
+  LR: 0.1
+  BASE_LR_MULT: 0.1
+
+TRAINER:
+  NAME: 'EADA'
+  MAX_EPOCHS: 50
+  ENERGY_ALIGN_WEIGHT: 0.01
+  ENERGY_ALIGN_TYPE: 'max'
+  FIRST_SAMPLE_RATIO: 0.5
+
+SEED: 0

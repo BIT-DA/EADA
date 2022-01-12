@@ -1,0 +1,44 @@
+OUTPUT_DIR: 'results/'
+
+MODEL:
+  BACKBONE:
+    NAME: 'resnet50'  # resnet18 or resnet50
+
+INPUT:
+  SIZE: (256, 256)
+  CROP_SIZE: (224, 224)
+  SOURCE_TRANSFORMS: ('random_crop', 'normalize', 'colorjitter')
+  TARGET_TRANSFORMS: ('random_crop', 'normalize')
+  TEST_TRANSFORMS: ('center_crop', 'normalize')
+  PIXEL_MEAN: [0.485, 0.456, 0.406]
+  PIXEL_STD: [0.229, 0.224, 0.225]
+
+DATASET:
+  ROOT: 'data/list/'
+  NAME: 'visda2017'
+  SOURCE_DOMAINS: ['synthetic']
+  TARGET_DOMAINS: ['real']
+  NUM_CLASS: 12
+
+DATALOADER:
+  SOURCE:
+    BATCH_SIZE: 32
+  TARGET:
+    BATCH_SIZE: 32
+  TEST:
+    BATCH_SIZE: 32
+OPTIM:
+  NAME: 'Adadelta'
+  LR: 0.1
+  BASE_LR_MULT: 0.1
+TRAIN:
+  PRINT_FREQ: 100
+
+TRAINER:
+  NAME: 'EADA'
+  MAX_EPOCHS: 20
+  ENERGY_ALIGN_WEIGHT: 0.0005
+  ENERGY_ALIGN_TYPE: 'max'
+  FIRST_SAMPLE_RATIO: 0.5
+
+SEED: 0

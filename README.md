@@ -78,17 +78,17 @@ ln -s /path_to_visda2017_dataset/clf/ data/visda2017
 
 For Office-31
 ```
-python train.py --cfg configs/office.yaml
+python main.py --cfg configs/office.yaml
 ```
 
 For Office-Home
 ```
-python train.py --cfg configs/home.yaml
+python main.py --cfg configs/home.yaml
 ```
 
 For VisDA-2017
 ```
-python train.py --cfg configs/visda2017.yaml
+python main.py --cfg configs/visda2017.yaml
 ```
 
 ## Acknowledgements

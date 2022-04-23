@@ -141,9 +141,9 @@ def train(cfg, task):
                 tgt_unlabeled_out = model(tgt_unlabeled_img, return_feat=False)
                 with torch.no_grad():
                     # free energy of samples
-                    output_div_t = -1.0 * src_out / cfg.TRAINER.ENERGY_BETA
+                    output_div_t = -1.0 * cfg.TRAINER.ENERGY_BETA * src_out
                     output_logsumexp = torch.logsumexp(output_div_t, dim=1, keepdim=False)
-                    free_energy = -1.0 * cfg.TRAINER.ENERGY_BETA * output_logsumexp
+                    free_energy = -1.0 * output_logsumexp / cfg.TRAINER.ENERGY_BETA
 
                     src_batch_free_energy = free_energy.mean().detach()
 

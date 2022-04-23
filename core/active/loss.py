@@ -35,10 +35,10 @@ class FreeEnergyAlignmentLoss(nn.Module):
             self.loss = bound_max_loss
 
     def forward(self, inputs, bound):
-        mul_neg_beta = -1 * inputs * self.beta
-
+        mul_neg_beta = -1.0 * self.beta * inputs
         log_sum_exp = torch.logsumexp(mul_neg_beta, dim=1)
         free_energies = -1.0 * log_sum_exp / self.beta
+
         bound = torch.ones_like(free_energies) * bound
         loss = self.loss(free_energies, bound)
 
@@ -60,8 +60,8 @@ class NLLLoss(nn.Module):
         energy_c = torch.gather(inputs, dim=1, index=indices)
 
         all_energy = -1.0 * self.beta * inputs
-        free_energy = torch.logsumexp(all_energy, dim=1, keepdim=True) / self.beta
+        free_energy = -1.0 * torch.logsumexp(all_energy, dim=1, keepdim=True) / self.beta
 
-        nLL = energy_c + free_energy
+        nLL = energy_c - free_energy
 
         return nLL.mean()

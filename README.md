@@ -1,7 +1,16 @@
+ ---
+
+<div align="center">    
+ 
 # Active Learning for Domain Adaptation: An Energy-based Approach
 
-**[[Arxiv](https://arxiv.org/abs/2112.01406)]**
-**[[Paper](https://arxiv.org/pdf/2112.01406.pdf)]**
+[Binhui Xie](https://binhuixie.github.io), [Longhui Yuan](https://scholar.google.com/citations?user=fVnEIZEAAAAJ&hl=en&oi=sra), [Shuang Li](https://shuangli.xyz), [Chi Harold Liu](https://scholar.google.com/citations?user=3IgFTEkAAAAJ&hl=en), [Xinjing Cheng](https://scholar.google.com/citations?user=8QbRVCsAAAAJ&hl=en) and [Guoren Wang](https://scholar.google.com.hk/citations?hl=en&user=UjlGD7AAAAAJ)
+
+
+[![Paper](http://img.shields.io/badge/paper-arxiv.2112.01406-B31B1B.svg)](https://arxiv.org/abs/2112.01406)
+
+</div>
+
 
 Unsupervised domain adaptation (UDA) has recently emerged as an effective paradigm for generalizing deep neural networks to new target domains. However, there is still enormous potential to be tapped to reach the fully supervised performance. 
 
@@ -18,11 +27,13 @@ For more information on EADA, please check our **[[Paper](https://arxiv.org/pdf/
 If you find this project useful in your research, please consider citing:
 
 ```bib
-@inproceedings{xie2022eada,
-  title={Active Learning for Domain Adaptation: An Energy-based Approach},
-  author={Binhui Xie, Longhui Yuan, Shuang Li, Chi Harold Liu, Xinjing Cheng, Guoren Wang},
-  booktitle={Thirty-Sixth AAAI Conference on Artificial Intelligence (AAAI-22)},
-  pages={},
+@inproceedings{xie2022active,
+  title={Active learning for domain adaptation: An energy-based approach},
+  author={Xie, Binhui and Yuan, Longhui and Li, Shuang and Liu, Chi Harold and Cheng, Xinjing and Wang, Guoren},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={36},
+  number={8},
+  pages={8708--8716},
   year={2022}
 }
 ```

@@ -8,8 +8,12 @@ def RAND_active(tgt_unlabeled_ds, tgt_selected_ds, active_ratio, totality):
     length = len(tgt_unlabeled_ds.samples)
     index = random.sample(range(length), round(totality * active_ratio))
 
-    tgt_selected_ds.add_item(tgt_unlabeled_ds.samples[index])
+    active_samples = tgt_unlabeled_ds.samples[index]
+
+    tgt_selected_ds.add_item(active_samples)
     tgt_unlabeled_ds.remove_item(index)
+
+    return active_samples
 
 
 def EADA_active(tgt_unlabeled_loader_full, tgt_unlabeled_ds, tgt_selected_ds, active_ratio, totality, model, cfg):

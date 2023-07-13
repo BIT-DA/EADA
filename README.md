@@ -7,7 +7,9 @@
 [Binhui Xie](https://binhuixie.github.io), [Longhui Yuan](https://scholar.google.com/citations?user=fVnEIZEAAAAJ&hl=en&oi=sra), [Shuang Li](https://shuangli.xyz), [Chi Harold Liu](https://scholar.google.com/citations?user=3IgFTEkAAAAJ&hl=en), [Xinjing Cheng](https://scholar.google.com/citations?user=8QbRVCsAAAAJ&hl=en) and [Guoren Wang](https://scholar.google.com.hk/citations?hl=en&user=UjlGD7AAAAAJ)
 
 
-[![Paper](http://img.shields.io/badge/paper-arxiv.2112.01406-B31B1B.svg)](https://arxiv.org/abs/2112.01406)
+[![Paper](http://img.shields.io/badge/paper-arxiv.2112.01406-B31B1B.svg)](https://arxiv.org/abs/2112.01406)&nbsp;&nbsp;
+[![Bilibili](https://img.shields.io/badge/Video-Bilibili-%2300A1D6?logo=bilibili&style=flat-square)](https://www.bilibili.com/video/BV1qa411h7Xm/?share_source=copy_web&vd_source=2536293932098e7a347341a231b3fb8b)&nbsp;&nbsp;
+[![Slides](https://img.shields.io/badge/Poster-Dropbox-%230061FF?logo=dropbox&style=flat-square)](https://www.dropbox.com/s/8ozwc8uw1q1tqlf/eada_slides.pdf?dl=0)&nbsp;&nbsp;
 
 </div>
 

@@ -4,7 +4,7 @@
  
 # Active Learning for Domain Adaptation: An Energy-based Approach
 
-[Binhui Xie](https://binhuixie.github.io), [Longhui Yuan](https://scholar.google.com/citations?user=fVnEIZEAAAAJ&hl=en&oi=sra), [Shuang Li](https://shuangli.xyz), [Chi Harold Liu](https://scholar.google.com/citations?user=3IgFTEkAAAAJ&hl=en), [Xinjing Cheng](https://scholar.google.com/citations?user=8QbRVCsAAAAJ&hl=en) and [Guoren Wang](https://scholar.google.com.hk/citations?hl=en&user=UjlGD7AAAAAJ)
+[Binhui Xie](https://binhuixie.github.io), [Longhui Yuan](https://yuanlonghui.github.io), [Shuang Li](https://shuangli.xyz), [Chi Harold Liu](https://scholar.google.com/citations?user=3IgFTEkAAAAJ&hl=en), [Xinjing Cheng](https://scholar.google.com/citations?user=8QbRVCsAAAAJ&hl=en) and [Guoren Wang](https://scholar.google.com.hk/citations?hl=en&user=UjlGD7AAAAAJ)
 
 
 [![Paper](http://img.shields.io/badge/paper-arxiv.2112.01406-B31B1B.svg)](https://arxiv.org/abs/2112.01406)&nbsp;&nbsp;
